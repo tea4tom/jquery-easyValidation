@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>easyValidation [examples]</title>
+    <meta name="description" content="Example code for easyValidation jquery plugin">
+    <meta name="author" content="Tom Poole">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="css/easyValidation.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/evdemo-forms.css" rel="stylesheet" type="text/css" media="all">
+
+  </head>
+
+  <body>
+
+    <form action="" method="POST" class="easyValidate">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" data-validate="notnull" required="" />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" data-validate="email" required="" />
+      </div>
+      <div class="field">
+        <label for="telephone">Telephone</label>
+        <input type="tel" name="telephone" id="telephone" data-validate="telephone" required="" />
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="4" required=""></textarea>
+      </div>
+
+      <ul class="actions">
+        <li><input type="submit" value="Send Message" /></li>
+      </ul>
+    </form>
+
+
+    // Validation script includes
+    <script src="depends/jquery-3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/easyValidation.js" type="text/javascript"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,22 @@
+.ev-glowingborder {
+  border: 2px solid #dadada;
+  border-radius: 7px;
+}
+
+.ev-glowingborder:focus {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+.ev-validated {
+  outline: none;
+  border-color: #009F00;
+  box-shadow: 0 0 10px #009F00;
+}
+
+.ev-haserror {
+  outline: none;
+  border-color: #9F0000;
+  box-shadow: 0 0 10px #9F0000;
+}
