@@ -1,37 +1,39 @@
+.content {
+  width: 750px;
+  margin: 0px auto;
+}
+.lead { font-size: 1.2em; }
+.smalltext { font-size: 0.8em; }
+
 form{margin:0 0 2em 0;}
 form .field{margin:0 0 2em 0;}
 form .field label{margin-top:-1.5em;}
 form .field:first-child label{margin-top:0;}
 form >:last-child{margin-bottom:0;}
+
 label{color:#000000;display:block;font-family:Raleway, Helvetica, sans-serif;font-size:0.8em;font-weight:700;letter-spacing:0.1em;margin:0 0 0.7em 0;text-transform:uppercase;}
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
 select,
 textarea{color:inherit;display:block;outline:0;padding:0 1em;text-decoration:none;width:100%;}
-input[type="text"]:invalid,
-input[type="password"]:invalid,
-input[type="email"]:invalid,
-input[type="tel"]:invalid,
-select:invalid,
-textarea:invalid{box-shadow:none;}
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-select:focus,
-textarea:focus{/*border-color:#FF1D1D;*/}
+
 .select-wrapper{text-decoration:none;display:block;position:relative;}
 .select-wrapper:before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:FontAwesome;font-style:normal;font-weight:normal;text-transform:none !important;}
 .select-wrapper:before{color:rgba(255, 255, 255, 0.125);content:'\f078';display:block;height:2.75em;line-height:2.75em;pointer-events:none;position:absolute;right:0;text-align:center;top:0;width:2.75em;}
 .select-wrapper select::-ms-expand{display:none;}
 select option{color:#000000;background:#000000;}
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="tel"],
 select{height:2.75em;}
+
 textarea{padding:0.75em 1em;}
+
 input[type="checkbox"],
 input[type="radio"]{-moz-appearance:none;-webkit-appearance:none;-ms-appearance:none;appearance:none;display:block;float:left;margin-right:-2em;opacity:0;width:1em;z-index:-1;}
 input[type="checkbox"] + label,

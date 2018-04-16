@@ -45,11 +45,35 @@ if(jQuery) (function($) {
               }
             }
           });
+					// && focusout
+					$(this).focusout(function() {
+            if($(this).val() != '') {
+              if(validateEmailAddress($(this).val())) {
+                $(this).removeClass('ev-haserror');
+                $(this).addClass('ev-validated');
+              } else {
+                $(this).removeClass('ev-validated');
+                $(this).addClass('ev-haserror');
+              }
+            }
+          });
         }
 
         if($(this).data('validate')=='telephone') {
           // onkeyup
           $(this).keyup(function() {
+            if($(this).val() != '') {
+              if(validateTelephoneNumber($(this).val())) {
+                $(this).removeClass('ev-haserror');
+                $(this).addClass('ev-validated');
+              } else {
+                $(this).removeClass('ev-validated');
+                $(this).addClass('ev-haserror');
+              }
+            }
+          });
+					// && focusout
+					$(this).focusout(function() {
             if($(this).val() != '') {
               if(validateTelephoneNumber($(this).val())) {
                 $(this).removeClass('ev-haserror');

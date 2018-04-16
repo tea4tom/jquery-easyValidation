@@ -21,31 +21,49 @@
 
   <body>
 
-    <form action="" method="POST" class="easyValidate">
-      <div class="field">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" data-validate="notnull" required="" />
-      </div>
-      <div class="field">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" data-validate="email" required="" />
-      </div>
-      <div class="field">
-        <label for="telephone">Telephone</label>
-        <input type="tel" name="telephone" id="telephone" data-validate="telephone" required="" />
-      </div>
-      <div class="field">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" rows="4" required=""></textarea>
-      </div>
-
-      <ul class="actions">
-        <li><input type="submit" value="Send Message" /></li>
+    <header class="content">
+      <h1>easyValidation.js</h1>
+      <p class="lead">A quick and easy plugin for validing input fields on forms in real-time.</p>
+      <p>Drop into existing projects by including easyValidation.css inbetween your HTML &lt;head&gt; tags and include the script(s) jquery* &amp; easyValidation.js at the end of your content before the &lt;/body&gt; tag.</p>
+      <p>Any forms you want to highlight user mistakes on need to have a class specified "easyValidate" to be included and you can control the type of validation by adding a data attribute "data-validate" to your text fields:</p>
+      <ul>
+        <li>data-validate="notnull"<br>
+          Makes sure the user does not leave the field blank.</li>
+        <li>data-validate="email"<br>
+          Compares user input to a valid email regular expresssion to make sure there is a username / domain name and an @ symbol.</li>
+        <li>data-validate="telephone"<br>
+          Compares the users input to a regular expression that closely matches a phone number.</li>
       </ul>
-    </form>
+      <p class="smalltext">* The jquery framework is required for this project. It has been developed using version 3.3.0 so make sure your current jquery API is compatible.</p>
+    </header>
+
+    <section id="exampleForm1" class="content">
+      <form action="" method="POST" class="easyValidate">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" data-validate="notnull" required="" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" data-validate="email" required="" />
+        </div>
+        <div class="field">
+          <label for="telephone">Telephone</label>
+          <input type="tel" name="telephone" id="telephone" data-validate="telephone" required="" />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="4" required=""></textarea>
+        </div>
+
+        <ul class="actions">
+          <li><input type="submit" value="Send Message" /></li>
+        </ul>
+      </form>
+    </section>
 
 
-    // Validation script includes
+    <!-- Validation script includes // -->
     <script src="depends/jquery-3.3.1/jquery.min.js" type="text/javascript"></script>
     <script src="js/easyValidation.js" type="text/javascript"></script>
 
