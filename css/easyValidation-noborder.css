@@ -1,0 +1,57 @@
+.ev-glowingborder {
+  /* border: 2px solid #dadada;
+  border-radius: 7px; */
+}
+
+.ev-glowingborder:focus {
+  /* outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed; */
+}
+
+.ev-validated::after {
+  margin-right: 0.5em;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  color: green;
+  font-weight: 900;
+  content: "\f00c";
+}
+
+.ev-haserror::after {
+  margin-right: 0.5em;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  color: tomato;
+  font-weight: 900;
+  content: "\f00d";
+}
+
+.ev-success {
+  font-size: 1.2em;
+  color: green;
+  display: none;
+}
+.ev-error {
+  font-size: 1.2em;
+  color: tomato;
+  display: none;
+}
+.ev-think {
+  font-size: 1.2em;
+  color: grey;
+  display: none;
+}
+
+.ev-vindicator {
+  display: inline-block;
+  width: 100%;
+}
